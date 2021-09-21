@@ -1,0 +1,204 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../assets/Caveat-VariableFont_wght.ttf);
+}
+
+* {
+    background-color: #fcdebe;
+    font-family: myFirstFont;  
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+main {
+    margin: 7%;
+}
+
+.main-header {
+    justify-content: flex-start;
+    background-image: url("./pic1.jpg");
+    height: 500px;
+    margin-top: 0px;
+    padding: 64px 0;
+    width: 100%;
+    background-size: contain;
+}
+
+.main-header h1 {
+    color: white;
+    background: rgb(151, 201, 202, 0.0);
+    margin: 10%;
+    font-size: 100px;
+    text-align: center;
+} 
+
+.topnav { 
+    top: 0;
+    width: 100%;
+    background-color: #fcdebe;
+}
+
+.topnav div {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    background-color: #fcdebe;
+}
+
+.topnav #links {
+    text-align: center;
+    float: right;
+}
+
+.topnav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    background-color: #fcdebe;
+    transition: background-color 250ms ease-in-out;
+}
+
+.topnav a:hover {
+    background-color: #776871;
+    color: white;
+    transform: translateY(-10px)
+}
+
+/* main container with both sections inside */
+.info {
+    display: flex;
+    margin-right: 5%;
+    width: 100%;
+}
+
+.info h2 {
+    text-align: right;
+    width: 15%;
+    font-size: 50px;
+    border-right-width: 5px;
+    border-right-color: #565246;
+    margin: 5%;
+}
+
+/* about me text */
+.info p {
+    float: right;
+    width: 70%;
+    font-size: 30px;
+    margin: 5%; 
+    margin-left: 0;
+    margin-right: 15%;
+}
+
+/* divider lines */
+.info hr {
+    color: #565246;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    margin: 3%;
+}
+
+/* container with images inside */
+.cards {
+    margin: 5%;
+    margin-left: 0;
+    margin-right: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    width: 70%;
+    padding: 0 10px;
+}
+
+.images {
+    position: relative;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.images img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    padding: 10px;
+    transition: opacity 250ms ease-in-out;
+}
+
+.images:hover img {
+    opacity: 1;
+}
+
+.images h3 {
+    background-color: rgba(119, 104, 113,0.7);
+    padding: 5%;
+    position: absolute;
+    top: 10px;
+    width: 70%;
+    transition: transform 250ms ease-in-out;
+}
+
+.images:hover h3 {
+    background-color: #739E82;
+}
+
+#featured {
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#featured img {
+    opacity: 0.5;
+    border: 3px #565246;
+    padding: 0px;
+    width: 100%;
+    align-content: flex-start;
+    justify-content: space-between;
+    transition: opacity 250ms ease-in-out;
+}
+
+#featured h3 {
+    background-color: rgba(119, 104, 113,0.6);
+    font-size: 200%;
+    padding: 5%;
+    position: absolute;
+    top: 10px;
+    width: 70%;
+    transition: transform 250ms ease-in-out;
+}
+
+#featured:hover img {
+    opacity: 1;
+}
+
+#featured:hover h3 {
+    background-color: #739E82;
+    transform: translateY(-10px)
+}
+
+footer {
+    display: flex;
+    font-size: 32px;
+    bottom: 5px;
+    text-align: center;
+}
+
+footer a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin: auto;
+    margin-bottom: 0;
+}
