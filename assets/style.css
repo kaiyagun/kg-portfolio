@@ -23,6 +23,7 @@ main {
 .main-header {
     justify-content: flex-start;
     background-image: url("./pic1.jpg");
+    background-repeat: no-repeat;
     height: 500px;
     margin-top: 0px;
     padding: 64px 0;
@@ -189,10 +190,14 @@ main {
 }
 
 footer {
-    display: flex;
+    display: inline-flex;
     font-size: 32px;
     bottom: 5px;
     text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
 }
 
 footer a {
@@ -201,4 +206,33 @@ footer a {
     color: black;
     margin: auto;
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+
+    .topnav div a {
+        display: block;
+    }
+
+    .main-header h1 {
+        font-size: 300%;
+    }
+    .main-header {
+        height: 300px;
+    }
+    .images img {
+        width: 100%;
+    }
+    
+    .info {
+        display: block;
+        width: 100%;
+    }
+
+    footer li{
+        display: block;
+        text-align: center;
+        list-style-type: none;
+        bottom: 0;
+    }
 }
