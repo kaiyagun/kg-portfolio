@@ -190,22 +190,26 @@ main {
 }
 
 footer {
-    display: inline-flex;
-    font-size: 32px;
-    bottom: 5px;
+    font-size: 42px;
+    bottom: 0px;
     text-align: center;
+   
 }
 
-footer ul {
-    list-style-type: none;
-}
 
 footer a {
     text-align: center;
     text-decoration: none;
     color: black;
-    margin: auto;
-    margin-bottom: 0;
+    margin: 50px;
+    margin-bottom: 0; 
+    bottom: 0;
+   
+}
+
+.icon {
+    height: 40px;
+    margin: 0 15px;
 }
 
 @media screen and (max-width: 600px) {
@@ -229,12 +233,5 @@ footer a {
     .info {
         display: block;
         width: 100%;
-    }
-
-    footer li{
-        display: block;
-        text-align: center;
-        list-style-type: none;
-        bottom: 0;
     }
 }
