@@ -23,7 +23,6 @@ main {
 .main-header {
     justify-content: flex-start;
     background-image: url("./pic1.jpg");
-    background-repeat: no-repeat;
     height: 500px;
     margin-top: 0px;
     padding: 64px 0;
@@ -219,7 +218,9 @@ footer a {
     }
     .main-header {
         height: 300px;
+    background-repeat: no-repeat;
     }
+
     .images img {
         width: 100%;
     }
