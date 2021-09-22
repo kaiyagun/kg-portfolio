@@ -21,13 +21,14 @@ main {
 }
 
 .main-header {
-    justify-content: flex-start;
     background-image: url("./pic1.jpg");
-    height: 500px;
-    margin-top: 0px;
-    padding: 64px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
     width: 100%;
-    background-size: contain;
+    height: auto;
+    display: block;
 }
 
 .main-header h1 {
